@@ -7,6 +7,8 @@ def count_calls():
 
 
 def string_info(string):
+    global calls
+    calls += 1
     chameleon_down = string.lower()
     chameleon_up = string.upper()
     this_is_the_length = len(string)
@@ -14,6 +16,8 @@ def string_info(string):
 
 
 def is_contains(string, list_to_search):
+    global calls
+    calls += 1
     for i in list_to_search:
         if string.upper() == i.upper():
             return True
